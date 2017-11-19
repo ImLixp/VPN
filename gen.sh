@@ -1,1 +1,1 @@
-rm -rf _site site.tar.gz && jekyll build && tar -zcf site.tar.gz _site
+mkdir -p /tmp/_site && rm -rf ./_site/* && jekyll build

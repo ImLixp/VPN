@@ -11,7 +11,7 @@ layout: default
       </div>
         
       <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">开始</a>
+        <a href="{{ site.posts[-1].url | relative_url }}" id="download-button" class="btn-large waves-effect waves-light orange">开始教程</a>
       </div>
       <br><br>
 
@@ -28,7 +28,7 @@ layout: default
             <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">购买教程</h5>
 
-            <p class="light">购买...</p>
+            <p class="light">如何使用支付宝在搬瓦工租用服务器...[<a href="{{ site.posts[-1].url | relative_url }}">详细</a>]</p>
           </div>
         </div>
 
@@ -37,7 +37,7 @@ layout: default
             <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
             <h5 class="center">服务器搭建</h5>
 
-            <p class="light">服务器搭建...</p>
+            <p class="light">如何在服务器搭建VPN服务器...[<a href="{{ site.posts[-2].url | relative_url }}">详细</a>]</p>
           </div>
         </div>
 
@@ -46,7 +46,7 @@ layout: default
             <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">客户端搭建</h5>
 
-            <p class="light">客户端搭建...</p>
+            <p class="light">如何在客户端(PC/手机)使用VPN科学上网...[<a href="{{ site.posts[-3].url | relative_url }}">详细</a>]</p>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@ layout: default
     <div style="background: #ddd">
     <div class="container last-post">
     <section>
-        <h5>Latest Post</h5>
+        <h5>最近文章</h5>
         <ul class="collection">
         {% for post in site.posts %}
         <li class="collection-item avatar">
@@ -75,4 +75,3 @@ layout: default
     </div>
 </div>
 
-  </div>
