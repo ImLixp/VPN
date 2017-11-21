@@ -2,6 +2,7 @@ title: VPN教程
 author: wekeyshit
 email: someone@gmail.com
 baseurl: /jekyll-materialize-starter-template
+#baseurl: 
 description: > # this means to ignore newlines until "baseurl:"
     一步步搭建属于自己的VPN服务器
 

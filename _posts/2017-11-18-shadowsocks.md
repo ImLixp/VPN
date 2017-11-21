@@ -44,8 +44,8 @@ title: VPN服务器搭建
 
 ![SScfg][5]
 
-[1]: /images/2/1.png
-[2]: /images/2/2.png
-[3]: /images/2/3.png
-[4]: /images/2/4.png
-[5]: /images/2/5.png
+[1]: {{ site.baseurl }}/images/2/1.png
+[2]: {{ site.baseurl }}/images/2/2.png
+[3]: {{ site.baseurl }}/images/2/3.png
+[4]: {{ site.baseurl }}/images/2/4.png
+[5]: {{ site.baseurl }}/images/2/5.png
