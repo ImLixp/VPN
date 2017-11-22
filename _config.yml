@@ -1,13 +1,27 @@
 title: VPN教程
 author: wekeyshit
 email: someone@gmail.com
-baseurl: /jekyll-materialize-starter-template
-#baseurl: 
+#baseurl: /jekyll-materialize-starter-template
+baseurl: 
 description: > # this means to ignore newlines until "baseurl:"
     一步步搭建属于自己的VPN服务器
 
-twitter_username: twitter_lixiaopeng
-github_username:  github_lixiaopeng
+f1link1data: 29刀/年
+f1link2data: 39刀/年
+f1link3data: 49刀/年
+f1link4data: 59刀/年
+f1link1url: http://47.93.31.171/cart.php?pid=29
+f1link2url: http://47.93.31.171/cart.php?pid=39
+f1link3url: http://47.93.31.171/cart.php?pid=49
+f1link4url: http://47.93.31.171/cart.php?pid=59
+f2link1data: 搬瓦工
+f2link2data: shadowsocks源码
+f2link3data: 支付宝
+f2link4data: PayPal
+f2link1url: http://47.93.31.171/index.php
+f2link2url: https://github.com/shadowsocks
+f2link3url: https://www.alipay.com
+f2link4url: https://www.paypal.com
 
 sass:
     style: compressed
