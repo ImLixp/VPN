@@ -1,6 +1,7 @@
 ---
 layout: post
 title: VPN服务器搭建
+tag: server
 ---
 
 ### Shadowsocks简介
