@@ -26,9 +26,18 @@ layout: default
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">购买教程</h5>
-
-            <p class="light">通过支付宝在搬瓦工租用服务器...[<a href="{{ site.posts[-1].url | relative_url }}">详细</a>]</p>
+            <h5 class="center">服务器租用</h5>
+            <p class="light">通过支付宝在搬瓦工租用服务器...</p>
+            {% for tag in site.tags %}
+                {% if tag[0] == "buy" %}
+                    <ul class="ulPostList">
+                    {% for post in tag[1]  reversed %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
           </div>
         </div>
 
@@ -36,8 +45,17 @@ layout: default
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
             <h5 class="center">服务器搭建</h5>
-
-            <p class="light">如何在服务器搭建VPN服务器...[<a href="{{ site.posts[-2].url | relative_url }}">详细</a>]</p>
+            <p class="light">如何在服务器搭建VPN服务器...</p>
+            {% for tag in site.tags %}
+                {% if tag[0] == "server" %}
+                    <ul class="ulPostList">
+                    {% for post in tag[1]  reversed %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
           </div>
         </div>
 
@@ -45,8 +63,17 @@ layout: default
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
             <h5 class="center">客户端搭建</h5>
-
-            <p class="light">如何在客户端(PC/手机)使用VPN科学上网...[<a href="{{ site.posts[-3].url | relative_url }}">详细</a>]</p>
+            <p class="light">如何在客户端(PC/手机)科学上网...</p>
+            {% for tag in site.tags %}
+                {% if tag[0] == "client" %}
+                    <ul class="ulPostList">
+                    {% for post in tag[1]  reversed %}
+                        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>

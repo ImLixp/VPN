@@ -483,6 +483,24 @@ td, th{
 
 
 // Collections
+ul.ulPostList {
+  //list-style-type: none;
+  list-style-type: circle;
+  //list-style-type: disc;
+  //list-style-type: square;
+  & > li:hover {
+  //list-style-type: none;
+  //list-style-type: circle;
+  list-style-type: disc;
+  //list-style-type: square;
+  }
+}
+ul.collection {
+  list-style-type: none;
+  & > li:hover {
+    background-color: $collection-active-color;
+  }
+}
 .collection {
   margin: $element-top-margin 0 $element-bottom-margin 0;
   border: 1px solid $collection-border-color;
