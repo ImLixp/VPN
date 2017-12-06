@@ -212,3 +212,20 @@
 
   will-change: opacity;
 }
+
+.nav_dropdown {
+    //display:block;
+}
+
+.nav_dropdown_content {
+    position:absolute;
+    display:none;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.nav_dropdown:hover {
+    & > .nav_dropdown_content{
+        display:block;
+    }
+}
