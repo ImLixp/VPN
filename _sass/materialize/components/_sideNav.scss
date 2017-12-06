@@ -213,15 +213,26 @@
   will-change: opacity;
 }
 
+.nav_fixed {
+    top:0;
+    position:fixed;
+    z-index: 1000;
+}
+
 .nav_dropdown {
-    //display:block;
+    display: inline;
 }
 
 .nav_dropdown_content {
+//    position:relative;
+    width:14em;
     position:absolute;
     display:none;
     padding-left: 0;
     list-style-type: none;
+    & > li {
+        width:100%;
+    }
 }
 
 .nav_dropdown:hover {

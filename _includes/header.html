@@ -1,30 +1,35 @@
-<nav class="light-blue lighten-1" role="navigation">
+<nav class="light-blue lighten-1" role="navigation"></nav>
+<nav class="light-blue lighten-1 nav_fixed" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" class="brand-logo" href="{{ "/" | relative_url }}">FUCKGFW</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li class="nav_dropdown"><a href="{{ "/" | relative_url }}">首页</a></li>
             <li class="nav_dropdown">
-                <a>world</a>
-                <ul class="nav_dropdown_content blue lighten-1">
-                    <li><a>world1</a></li>
-                    <li><a>world2</a></li>
-                </ul>
+                <a>服务器</a>
+                {% for tag in site.tags %}
+                    {% if tag[0] == "server" %}
+                        <ul class="nav_dropdown_content light-blue lighten-1">
+                            {% for post in tag[1]  reversed %}
+                                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
             </li>
             <li class="nav_dropdown">
-                <a>hello</a>
-                <ul class="nav_dropdown_content blue lighten-1">
-                    <li><a>hello1</a></li>
-                    <li><a>hello2</a></li>
-                </ul>
+                <a>客户端</a>
+                {% for tag in site.tags %}
+                    {% if tag[0] == "client" %}
+                        <ul class="nav_dropdown_content light-blue lighten-1">
+                            {% for post in tag[1]  reversed %}
+                                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
             </li>
-            <li class="nav_dropdown">
-                <a>hello</a>
-                <ul class="nav_dropdown_content blue lighten-1">
-                    <li><a>hello1</a></li>
-                    <li><a>hello2</a></li>
-                </ul>
-            </li>
-            <li></li>
         </ul>
     </div>
 </nav>
