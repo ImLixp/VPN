@@ -753,3 +753,18 @@ ul.collection {
 .no-padding {
   padding: 0 !important;
 }
+
+code {
+  & > .w {
+    display:block;
+  }
+  & > .nt {
+    padding-left:2em;
+  }
+  & > .p {
+    padding-left:0.1em;
+    padding-right:0.1em;
+
+  }
+}
+
