@@ -4,14 +4,14 @@ title: VPN服务器搭建教程[简易]
 tags: server
 ---
 
-### Shadowsocks简介
+#### Shadowsocks简介
 > VPN是一个统称，其具体的实现有很多种，比如*PPTP*、*L2TP*、*OpenVPN*、*Shadowsocks*等，本文仅介绍*Shadowsocks*。
 
 *Shadowsocks*是一个开源的VPN实现，简称*ss*，也称影梭。  
 搬瓦工支持*Shadowsocks Server*一键搭建，这里介绍一下。
 
 
-### Shadowsocks一键安装
+#### Shadowsocks一键安装
 
 ##### 1.打开服务器管理页面
 点击 *`Services`* -> *`My Services`*，然后点击 *`KiwiVM Control Panel`* 进入管理面板。  
