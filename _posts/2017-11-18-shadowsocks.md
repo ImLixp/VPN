@@ -7,7 +7,7 @@ tags: server
 #### Shadowsocks简介
 > VPN是一个统称，其具体的实现有很多种，比如*PPTP*、*L2TP*、*OpenVPN*、*Shadowsocks*等，本文仅介绍*Shadowsocks*。
 
-*Shadowsocks*是一个开源的VPN实现，简称*ss*，也称影梭。  
+*Shadowsocks*是一个开源的VPN实现，简称*ss*，也称影梭，原作者是clowwindy。  
 搬瓦工支持*Shadowsocks Server*一键搭建，这里介绍一下。
 
 
