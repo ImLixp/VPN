@@ -47,7 +47,7 @@ layout: default
             <h5 class="center">服务器搭建</h5>
             <p class="light">如何在服务器搭建VPN服务器...</p>
             {% for tag in site.tags %}
-                {% if tag[0] == "server" %}
+                {% if tag[0] == "serverBuild" %}
                     <ul class="ulPostList">
                     {% for post in tag[1]  reversed %}
                         <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>

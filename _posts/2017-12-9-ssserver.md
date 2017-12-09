@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 安装ss-server
-tags: server
+tags: server serverBuild
 ---
 
 > 搬瓦工支持一键搭建shadowsocks server，但其默认安装的是python程序，理论上解释执行效率要低一些。如果希望运行编译好的shadowsocks-libev，或者服务器不支持一键搭建，可以参考本文。也可以查看官方[README][ss-libev]。
