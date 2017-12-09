@@ -30,6 +30,19 @@
                     {% endif %}
                 {% endfor %}
             </li>
+            <li class="nav_dropdown">
+                <a>简易教程</a>
+                {% for tag in site.tags %}
+                    {% if tag[0] == "easy" %}
+                        <ul class="nav_dropdown_content light-blue lighten-1">
+                            {% for post in tag[1]  reversed %}
+                                <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            </li>
         </ul>
     </div>
 </nav>

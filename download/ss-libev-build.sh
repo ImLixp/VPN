@@ -1,7 +1,14 @@
-#!/bin/sh
+#!/bin/bash
+
+# cross-compiler: arm-linux-gnueabi-gcc
+HOST=arm-linux-gnueabi
+# x86-compiler: gcc
+#HOST=
+
+#ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.38.tar.gz
 url="
 https://github.com/jedisct1/libsodium/releases/download/1.0.15/libsodium-1.0.15.tar.gz
-ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.38.tar.gz
+https://ftp.pcre.org/pub/pcre/pcre-8.41.tar.gz
 https://github.com/shadowsocks/libev/archive/master.zip
 https://c-ares.haxx.se/download/c-ares-1.12.0.tar.gz
 https://tls.mbed.org/download/mbedtls-2.6.0-gpl.tgz
@@ -28,6 +35,11 @@ getDirname()
 
 compile()
 {
+    GCC=gcc
+    if [ -n $HOST ];then
+        GCC=$HOST-gcc
+        HOST="--host=$HOST"
+    fi
     dname=`getDirname $1`
     cd $dname
     ln -s ../insdir .
@@ -53,7 +65,7 @@ compile()
                 --with-mbedtls-lib=$rootlib
                 --with-sodium-include=$usrinc
                 --with-sodium-lib=$usrlib
-                --host=arm-linux-gnueabi
+                $HOST
                 --with-pcre=$usrbase
                 --disable-documentation
                 "
@@ -61,14 +73,14 @@ compile()
             make install DESTDIR=$PWD/insdir
         ;;
         pcre-8.38)
-            ./configure --host=arm-linux-gnueabi --enable-pcre8 --enable-pcre16 --enable-pcre32
+            ./configure $HOST --disable-cpp --enable-pcre8 --enable-pcre16 --enable-pcre32
             make install DESTDIR=$PWD/insdir
         ;;
         mbedtls-2.6.0)
-            CC=arm-linux-gnueabi-gcc make install DESTDIR=$PWD/insdir
+            CC=$GCC make install DESTDIR=$PWD/insdir
         ;;
         libev-master|libsodium-1.0.15|c-ares-1.12.0)
-            ./configure --host=arm-linux-gnueabi
+            ./configure $HOST
             make install DESTDIR=$PWD/insdir
         ;;
         *)
@@ -81,7 +93,7 @@ compile()
 download()
 {
     x=$1
-    wget $x
+    wget --no-cache --no-cookies $x
     file=`basename $x`
 #    ln -s ../../$file .
     echo =====================$file

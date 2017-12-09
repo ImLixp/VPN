@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VPN服务器搭建教程[简易]
-tags: server
+tags: server easy
 ---
 
 #### Shadowsocks简介
