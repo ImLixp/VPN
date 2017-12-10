@@ -9,7 +9,7 @@ tags: server serverBuild
 #### 从源码编译安装
 如果希望从源码编译安装ss-libev，可以参考[交叉编译ss-libev-3.1.1][ss-311]，把编译选项中的 `--host=arm-linux-gnueabi` 和 `CC=arm-linux-gnueabi-gcc` 去掉即可。
 
-#### 从版本库种安装
+#### 从版本库中安装
 
 ##### Ubuntu 和 Debian
 Shadowsocks-libev已经在以下发行版的官方软件库中:
