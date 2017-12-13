@@ -47,7 +47,7 @@ compile()
     case $dname in
         shadowsocks-libev-3.1.1|simple-obfs-0.0.5)
             if [ $dname == "simple-obfs-0.0.5" ];then
-                cp -rf ../shadowsocks-libev-3.1.1/libcrok .
+                cp -rf ../shadowsocks-libev-3.1.1/libcork .
             fi
             rootbase=$PWD/insdir
             usrbase=$PWD/insdir/usr/local
