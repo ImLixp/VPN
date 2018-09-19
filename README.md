@@ -1,4 +1,4 @@
 # VPN
 教程: [VPN搭建][vpn]
 
-[vpn]: https://wekeyshit.github.io/VPN
+[vpn]: https://ImLixp.github.io/VPN
