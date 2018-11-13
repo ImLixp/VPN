@@ -6,14 +6,14 @@ baseurl: /VPN
 description: > # this means to ignore newlines until "baseurl:"
     一步步搭建属于自己的VPN服务器
 
-f1link1data: 29刀/年
-f1link2data: 39刀/年
-f1link3data: 49刀/年
-f1link4data: 59刀/年
-f1link1url: http://47.93.31.171/cart.php?pid=29
-f1link2url: http://47.93.31.171/cart.php?pid=39
-f1link3url: http://47.93.31.171/cart.php?pid=49
-f1link4url: http://47.93.31.171/cart.php?pid=59
+f1link1data: 19刀/年
+f1link2data: 29刀/年
+f1link3data: 39刀/年
+f1link4data: 49刀/年
+f1link1url: http://47.93.31.171/cart.php?pid=43
+f1link2url: http://47.93.31.171/cart.php?pid=56
+f1link3url: http://47.93.31.171/cart.php?pid=71
+f1link4url: http://47.93.31.171/cart.php?pid=13
 f2link1data: 搬瓦工
 f2link2data: shadowsocks源码
 f2link3data: 支付宝
